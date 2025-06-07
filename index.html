@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Richard Diazdeleon – Portfolio</title>
+
+  <!-- W3.CSS & Icons -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --vader-red: #8B0000;
+    }
+
+    body.w3-black {
+      background-color: #111 !important;
+      color: #eee !important;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    /* Top nav */
+    .w3-bar {
+      border-bottom: 2px solid var(--vader-red) !important;
+    }
+    .w3-bar a {
+      position: relative;
+      color: #eee !important;
+      text-decoration: none;
+      margin: 0 8px;
+      padding-bottom: 6px;
+      font-weight: 500;
+      transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+    }
+    .w3-bar a::before {
+      content: "";
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 0; height: 3px;
+      background: var(--vader-red);
+      box-shadow: 0 0 10px var(--vader-red), 0 0 20px var(--vader-red);
+      transition: width 0.4s ease;
+    }
+    .w3-bar a:hover {
+      color: var(--vader-red) !important;
+      transform: scale(1.08);
+      text-shadow: 0 0 5px var(--vader-red);
+    }
+    .w3-bar a:hover::before {
+      width: 100%;
+    }
+
+    /* Sidebar links */
+    .w3-sidebar a {
+      color: #eee !important;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .w3-sidebar a:hover {
+      color: var(--vader-red) !important;
+    }
+
+    .content-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+  </style>
+</head>
+<body class="w3-black">
+
+  <!-- Top Navigation -->
+  <div class="w3-bar w3-black w3-padding w3-large w3-center">
+    <a href="#about" class="w3-bar-item w3-button">About</a>
+    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+    <a href="#resume" class="w3-bar-item w3-button">Resume</a>
+    <!-- Gear icon on the far right -->
+    <a href="#settings" class="w3-bar-item w3-button w3-right" title="Settings">
+      <i class="fas fa-cog"></i>
+    </a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="w3-main w3-padding w3-black" style="margin-right:220px;">
+    <div class="content-wrapper">
+
+      <!-- About Section -->
+      <section id="about" class="w3-container w3-text-white w3-padding-32">
+        <h2>About Me</h2>
+        <p>
+          I'm Richard Diazdeleon, a results-driven professional with 2+ years of experience combining financial analysis and data science(intern) to uncover opportunities, optimize performance, and drive strategic growth. I bring expertise in time series modeling, data automation, and predictive analytics to deliver actionable insights that support business development and revenue impact. Outside the office, I’m passionate about travel and have recently committed to a consistent fitness routine as part of a balanced and goal-oriented lifestyle.
+        </p>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="w3-container w3-text-white w3-padding-32">
+        <h2>Experience</h2>
+
+        <div class="w3-container w3-margin-bottom">
+          <h5 class="w3-opacity"><b>Financial Planning Analyst I / Kaiser Permanente</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2024 – Present</h6>
+          <p>
+            Developed and enhanced time series forecasting models (Prophet, ARIMA) for membership projections to support strategic planning. 
+            Led variance analysis across 50K+ accounts, estimated financials for restructuring and vendor tracking, and presented financial summaries for department budgeting.
+          </p>
+        </div>
+
+        <div class="w3-container w3-margin-bottom">
+          <h5 class="w3-opacity"><b>Finance Data Scientist / Kaiser Permanente</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2022 – December 2023</h6>
+          <p>
+            Analyzed spending across 250K+ accounts to recommend enterprise savings. Built Tableau cost-benefit models and time series analyses to drive financial decisions. 
+            Cleaned and visualized datasets using SQL and Tableau for enterprise reporting.
+          </p>
+        </div>
+
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Math Tutor / Newport Mesa Unified School District</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2021 – May 2022</h6>
+          <p>
+            Tutored high school students in Algebra and Geometry, helping raise average grades and improve state assessment performance through one-on-one and group sessions.
+          </p>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="w3-container w3-text-white w3-padding-32">
+        <h2>Education</h2>
+
+        <div class="w3-container w3-margin-bottom">
+          <h5 class="w3-opacity"><b>California State University, Long Beach</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2022 – Dec 2024</h6>
+          <p>Master of Science (MS) in Applied Statistics</p>
+          <p class="w3-small w3-text-grey">Coursework: Deep Learning, Advanced Statistical Methods, Time Series Analysis, Data Mining, Survival Analysis, Multivariate Analysis</p>
+        </div>
+
+        <div class="w3-container w3-margin-bottom">
+          <h5 class="w3-opacity"><b>California State University, Fullerton</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2018 – Dec 2021</h6>
+          <p>Bachelor of Arts (BA) in Computational and Applied Mathematics</p>
+          <p class="w3-small w3-text-grey">Coursework: Numerical Analysis, Linear Algebra, Probability Theory, Computational Methods, Advanced Calculus</p>
+        </div>
+
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Santa Ana College</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2015 – May 2017</h6>
+          <p>Associate of Science (AS) in Mathematics</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Contact Sidebar on the Right -->
+  <div class="w3-sidebar w3-black w3-bar-block w3-right" style="width:220px; height:100vh; border-left:2px solid var(--vader-red);">
+    <div class="w3-container w3-padding-32">
+      <h3>Contact</h3>
+      <p><i class="fas fa-envelope w3-margin-right"></i><a href="mailto:Richard.Diazdeleon01@student.csulb.edu">Email</a></p>
+      <p><i class="fab fa-linkedin w3-margin-right"></i><a href="https://www.linkedin.com/in/richarddiazdeleon" target="_blank">LinkedIn</a></p>
+      <p><i class="fas fa-globe w3-margin-right"></i><a href="https://dsrichard97.github.io/test/#about" target="_blank">Portfolio</a></p>
+      <p><i class="fab fa-github w3-margin-right"></i><a href="https://github.com/dsrichard97" target="_blank">GitHub</a></p>
+      <p><i class="fas fa-file-download w3-margin-right"></i><a href="https://csulb-my.sharepoint.com/:b:/g/personal/richard_diazdeleon01_student_csulb_edu/ESHSe5tMIqBLvw5ODJkvP_sBabsEI7FBKs6Kav3vyRWe2g?e=MTvyrm" download>Resume PDF</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+

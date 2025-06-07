@@ -1,0 +1,15 @@
+/* Ensure the W3.CSS sidebar floats on the right, not the left */
+.w3-sidebar.w3-right {
+  position: fixed !important;   /* stay fixed on scroll */
+  top: 0 !important;            /* align to top */
+  right: 0 !important;          /* pin to right edge */
+  left: auto !important;        /* cancel any left positioning */
+  height: 100vh !important;     /* full viewport height */
+  z-index: 1000;                /* above other content */
+}
+
+/* Push the main content over so it isn't hidden by the sidebar */
+.w3-main {
+  margin-right: 220px !important;  /* same width as your sidebar */
+}
+
